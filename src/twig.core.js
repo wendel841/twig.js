@@ -232,17 +232,17 @@ module.exports = function (Twig) {
         // These typically take the form `{{- expression -}}` or `{{- expression }}` or `{{ expression -}}`.
         {
             type: Twig.token.type.output_whitespace_pre,
-            open: '{{-',
+            open: '@{{-',
             close: '}}'
         },
         {
             type: Twig.token.type.output_whitespace_post,
-            open: '{{',
+            open: '@{{',
             close: '-}}'
         },
         {
             type: Twig.token.type.output_whitespace_both,
-            open: '{{-',
+            open: '@{{-',
             close: '-}}'
         },
         {
@@ -265,7 +265,7 @@ module.exports = function (Twig) {
         // These typically take the form `{{ expression }}`.
         {
             type: Twig.token.type.output,
-            open: '{{',
+            open: '@{{',
             close: '}}'
         },
         // *Logic type tokens*
